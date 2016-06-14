@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./_tests_/index.js --require babel-core/register --recursive"
+    "test": "mocha ./_tests_/strategy2.js --require babel-core/register --recursive"
   },
   "author": "Jon Oropeza <joropeza@gmail.com> (http://jonoropeza.com)",
   "license": "ISC",

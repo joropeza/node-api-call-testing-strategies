@@ -2,7 +2,7 @@ import weatherService from './api';
 
 export const getRawForecastFromResponseBody = weatherResponse => {
     if (!weatherResponse.text) {
-        throw new Error('unexpected response');
+        throw new Error('unexpected response body');
     }
     return JSON.parse(weatherResponse.text).query.results.channel.item.forecast;
 }
