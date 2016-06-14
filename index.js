@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 require('babel-core/register');
 
-var apiService = require('./services/api');
+var strategy1Service = require('./services/strategy2');
 
-apiService.call();
+strategy1Service.whatsItGoingToBeLikeTomorrow().then(weather =>
+    console.log(weather)
+);
